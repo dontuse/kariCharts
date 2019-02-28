@@ -1,0 +1,29 @@
+.MainRating {
+  background-color: #00B050;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 5px;
+  &__title {
+    font-size: 11px;
+  }
+  &__box {
+    text-align: center;
+    border-left: 1px solid white;
+    flex: 1;
+    padding-right: 5px;
+    // &:after {
+    //   border-left: 1px solid white;
+    //   content: '';
+    //   //display: block;
+    //   // position: absolute;
+    //   height: 100%;
+    // }
+  }
+  &__percent {
+    font-size: 45px;
+  }
+}

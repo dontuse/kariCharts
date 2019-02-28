@@ -1,0 +1,74 @@
+.Indicator {
+  $b: &;
+  background-color: #0070C0;
+  flex-wrap: wrap;
+  color: white;
+  flex: 40%;
+  font-size: 11px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  padding: 5px;
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+  &__box {
+    padding: 5px;
+    overflow: hidden;
+  }
+  &__head-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__days-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__indicators-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  &__raiting-value {
+    font-size: 20px;
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #3057FB;
+    border-radius: 4px;
+    background-color: white;
+  }
+  &__title {
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    margin: 0 5px;
+  }
+  &__day {
+    text-align: center;
+    flex: 1;
+    background: #0070C0;
+    border: white 1px solid;
+    border-left: none;
+    text-transform: uppercase;
+    &:first-child {
+      border: white 1px solid;
+    }
+    &.is-good {
+      background-color: #00B050;
+    }
+    &.is-bad {
+      background-color: #FB362F;
+    }
+  }
+
+  &.is-good {
+    background-color: #00B050;
+  }
+  &.is-bad {
+    background-color: #FB362F;
+  }
+}
+
+
+

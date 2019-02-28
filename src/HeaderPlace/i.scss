@@ -1,0 +1,12 @@
+.HeaderPlace {
+  display: flex;
+  margin-bottom: 20px;
+  color: #3056FB;
+  &__place {
+    text-align: right;
+    flex: 1;
+  }
+  &__box {
+    text-align: center;
+  }
+}
