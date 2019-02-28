@@ -48,7 +48,7 @@ export default class ChangingContent extends Component {
               <Row key={`${index}`}>
                 <Cell>
                 <div className={b('shop')}>
-                  <div>10250 80</div>
+                  <div className={b('name-box')}>10250 80</div>
                   <div className={b('days-box')}>
                     <div className={b('day')}></div>
                     <div className={b('day')}></div>
