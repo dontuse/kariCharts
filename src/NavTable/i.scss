@@ -1,31 +1,68 @@
+@import '../libs/colors.scss'; 
+
 .NavTable {
   color: white;
+  &__total-cell {
+    color: #2C50FF;
+  }
   &__shop {
-    background-color: red;
-    height: 40px;
+    background-color: $normalColor;
+    //height: 40px;
     border: 1px solid white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-weight: 600;
+    &.is-normal {
+      background-color: $normalColor;
+    }
+    &.is-bad {
+      background-color: $badColor;
+    }
+    &.is-veryBad {
+      background-color: $veryBadColor;
+    }
+    &.is-good {
+      background-color: $goodColor;
+    }
+    &.is-veryGood {
+      background-color: $veryGoodColor;
+    }
   }
   &__days-box {
     display: flex;
     justify-content: space-between;
-    height: 10px;
+    height: 12px;
   }
   &__day {
     background-color: #2C50FF;
-    flex: 1;
+    flex-grow: 1;
     border: 1px solid white;
     border-right: none;
     &:first-child {
       border-left: none;
+    }
+    &.is-normal {
+      background-color: $normalColor;
+    }
+    &.is-bad {
+      background-color: $badColor;
+    }
+    &.is-veryBad {
+      background-color: $veryBadColor;
+    }
+    &.is-good {
+      background-color: $goodColor;
+    }
+    &.is-veryGood {
+      background-color: $veryGoodColor;
     }
   }
   &__name-box {
     padding: 5px;
   }
   &__rating {
+    font-weight: 600;
     background-color: orange;
     border: 1px solid white;
     text-align: center;
@@ -33,5 +70,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &.is-normal {
+      background-color: $normalColor;
+    }
+    &.is-bad {
+      background-color: $badColor;
+    }
+    &.is-veryBad {
+      background-color: $veryBadColor;
+    }
+    &.is-good {
+      background-color: $goodColor;
+    }
+    &.is-veryGood {
+      background-color: $veryGoodColor;
+    }
   }
 }

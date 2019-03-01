@@ -8,7 +8,7 @@ export default class MainRating extends Component {
   render() {
     return (
       <div className={b()}>
-
+        <i className="fas fa-dog"></i>
       </div>
     )
   }

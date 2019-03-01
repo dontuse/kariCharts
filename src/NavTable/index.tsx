@@ -20,6 +20,7 @@ export default class ChangingContent extends Component {
   // }
   
   render() {
+    const vals = ['is-good', 'is-veryGood', 'is-bad','is-normal']
     return (
       <section style={{position: 'absolute', top: 0, left: 0, right: 0, bottom:0}}>
         <div className={b()} style={{height: '90%'}}>
@@ -39,7 +40,7 @@ export default class ChangingContent extends Component {
                   Итого
                 </Cell>
                 {[...new Array(16)].map((x, index) => (
-                  <Cell>
+                  <Cell className={b('total-cell')}>
                   1212
                   </Cell>
                 ))}
@@ -47,22 +48,22 @@ export default class ChangingContent extends Component {
             {[...new Array(100)].map((x, index) => (
               <Row key={`${index}`}>
                 <Cell>
-                <div className={b('shop')}>
+                <div className={b('shop').mix(vals[Math.floor(Math.random()*vals.length)])}>
                   <div className={b('name-box')}>10250 80</div>
                   <div className={b('days-box')}>
-                    <div className={b('day')}></div>
-                    <div className={b('day')}></div>
-                    <div className={b('day')}></div>
-                    <div className={b('day')}></div>
-                    <div className={b('day')}></div>
-                    <div className={b('day')}></div>
-                    <div className={b('day')}></div>
+                    <div className={b('day').is({'good': true})}></div>
+                    <div className={b('day').is({'veryGood': true})}></div>
+                    <div className={b('day').is({'bad': true})}></div>
+                    <div className={b('day').is({'veryBad': true})}></div>
+                    <div className={b('day').is({'normal': true})}></div>
+                    <div className={b('day').is({'normal': true})}></div>
+                    <div className={b('day').is({'normal': true})}></div>
                   </div>
                 </div>
                 </Cell>
                 {[...new Array(16)].map((x, index) => (
                   <Cell>
-                    <div className={b('rating')}>
+                    <div className={b('rating').mix(vals[Math.floor(Math.random()*vals.length)])}>
                       {index}
                     </div>
                   </Cell>

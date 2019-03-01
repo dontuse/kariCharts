@@ -1,7 +1,14 @@
 .IndicatorIcon {
   background-color: white;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   border: 1px solid #3056FB;
   margin-bottom: 5px;
+  font-size: 25px;
+  color: #3056FB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  margin-right: 5px;
 }
