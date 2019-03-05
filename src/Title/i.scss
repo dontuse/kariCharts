@@ -1,0 +1,11 @@
+@import '../libs/colors.scss'; 
+
+.title {
+  color: $titleColor;
+  size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  &.is-title {
+    font-size: 40px;
+  }
+}

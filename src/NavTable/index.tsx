@@ -26,7 +26,7 @@ export default class ChangingContent extends Component {
         <div className={b()} style={{height: '90%'}}>
         <StickyTable stickyHeaderCount={2}>
         <Row key={`firts-row`}>
-                <Cell>
+                <Cell className={b('total-cell')}>
                   фильтр
                 </Cell>
                 {[...new Array(16)].map((x, index) => (
@@ -36,12 +36,12 @@ export default class ChangingContent extends Component {
                 ))}
               </Row>
         <Row key={`second-row`}>
-                <Cell>
+                <Cell className={b('total-cell')}>
                   Итого
                 </Cell>
                 {[...new Array(16)].map((x, index) => (
                   <Cell className={b('total-cell')}>
-                  1212
+                  {Math.random().toFixed(3)}
                   </Cell>
                 ))}
               </Row>

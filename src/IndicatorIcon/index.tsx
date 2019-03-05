@@ -5,10 +5,20 @@ import { block } from 'bem-cn';
 const b = block('IndicatorIcon');
 
 export default class MainRating extends Component {
+  
   render() {
+    const arr = [
+      <i className="fas fa-ruble-sign"></i>,
+      <i className="fas fa-filter"></i>,
+      <i className="fas fa-door-open"></i>,
+      <i className="fas fa-shopping-basket"></i>,
+      <i className="fas fa-users"></i>,
+      <i className="fas fa-users"></i>,
+    ]
+
     return (
       <div className={b()}>
-        <i className="fas fa-dog"></i>
+        {arr[Math.floor(Math.random()*arr.length)]}
       </div>
     )
   }

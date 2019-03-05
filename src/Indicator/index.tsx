@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { block } from 'bem-cn';
 import './i.scss';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const b = block('Indicator');
 
@@ -13,6 +14,7 @@ export default class Indicator extends Component<IProps> {
   render() {
     return (
       <div className={b.mix(this.props.mix)}>
+      <Link to={'/details'}>
         <section className={b('box')}>
           <div className={b('head-box')}>
             <div className={b('changes')}>-55%</div>
@@ -43,6 +45,7 @@ export default class Indicator extends Component<IProps> {
           <div className={b('day')}>Сб</div>
           <div className={b('day')}>Вс</div>
         </div>
+        </Link>
       </div>
     );
   }

@@ -5,6 +5,10 @@ import MainRating from './MainRating';
 import HeaderPlace from './HeaderPlace';
 import IndicatorIcon from './IndicatorIcon';
 import NavTable from './NavTable';
+import Chart from './Chart';
+import Chart2 from './Chart/index2';
+import Chart3 from './Chart/index3';
+import Title from './Title';
 import './App.css';
 
 // const rows = [
@@ -94,7 +98,33 @@ const NavigationScreen = ({ match }) => (
           </table>
         </div>
       </section> */}
-      <NavTable></NavTable>
+      <NavTable />
+    </section>
+  </div>
+);
+
+const DetailsScreen = ({ match }) => (
+  <div style={{ 'max-width': 500, margin: '0 auto' }}>
+    <section>
+      
+      <HeaderPlace />
+      <Title mix={'is-title'}>Трафик</Title>
+      <div style={{ height: 250, marginBottom: 30 }}>
+        <Title>За сегодня</Title>
+        <Chart />
+      </div>
+      <Title>По итогам вчерашнего дня</Title>
+      <MainRating />
+      <Title>Динамика последних 7 дней</Title>
+      <div style={{ height: 250 }}>
+        <Chart2 />
+      </div>
+      <div>
+        <Title>Статистика за месяц</Title>
+        <div style={{ height: 250 }}>
+        <Chart3 />
+      </div>
+      </div>
     </section>
   </div>
 );
@@ -102,12 +132,11 @@ const NavigationScreen = ({ match }) => (
 const BasicExample = () => (
   <Router>
     <div>
-      
-
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/topics" component={Topics} />
       <Route path="/navigation-screen" component={NavigationScreen} />
+      <Route path="/details" component={DetailsScreen} />
     </div>
   </Router>
 );
