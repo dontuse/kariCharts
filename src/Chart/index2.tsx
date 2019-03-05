@@ -3,6 +3,11 @@ import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Line, ComposedChart,
 } from 'recharts';
 
+import './i.scss';
+import { block } from 'bem-cn';
+
+const b = block('Chart');
+
 const data = [
   {
     name: '5', uv: 4000, pv: 2400, amt: 2400,  q: 3333, r : 1222, day: 'вт'
@@ -30,15 +35,14 @@ const data = [
 
 const customizedTick = (props) => {
   console.log('props', props)
-	const { payload, x, y, index, } = props;
-  const cos = Math.cos(-payload.angle * Math.PI / 180);
-  const item = data[index]; 
+	const { payload, x, y } = props;
+  const item = data.find(v => v.name === payload.value);
   
   return (
-    <foreignObject x={x - 12} y={y-5} width={24} height={44}  fill="red" >
-    <div style={{background: 'red', color: 'white', fontSize: 11, padding: 4}}>
+    <foreignObject x={x - 15} y={y-5} width={30} height={44}  fill="red" >
+    <div className={b('day').is({holy: item.day === 'сб' || item.day === 'вс'})}>
       <div style={{marginBottom: 5}}>{payload.value}</div>
-      <div>{data.find(v => v.name === payload.value).day}</div>
+      <div>{item.day}</div>
     </div>
     </foreignObject>
   );
@@ -49,7 +53,7 @@ export default class Example extends PureComponent {
 
   render() {
     return (
-        <ResponsiveContainer>
+        <ResponsiveContainer className={b}>
           <ComposedChart
             data={data}
             margin={{

@@ -22,8 +22,8 @@ export default class ChangingContent extends Component {
   render() {
     const vals = ['is-good', 'is-veryGood', 'is-bad','is-normal']
     return (
-      <section style={{position: 'absolute', top: 0, left: 0, right: 0, bottom:0}}>
-        <div className={b()} style={{height: '90%'}}>
+      <section style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+        <div style={{height: '100%'}} className={b()}>
         <StickyTable stickyHeaderCount={2}>
         <Row key={`firts-row`}>
                 <Cell className={b('total-cell')}>

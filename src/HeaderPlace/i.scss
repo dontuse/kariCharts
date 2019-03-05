@@ -1,12 +1,25 @@
 .HeaderPlace {
   display: flex;
-  margin-bottom: 20px;
+  flex-grow: 0;
+  padding: 5px;
+  margin-bottom: 10px;
+  padding-top: 5px;
   color: #3056FB;
+  font-weight: 600;
   &__place {
     text-align: right;
     flex: 1;
+    padding-left: 20px;
+    font-size: 20px;
   }
   &__box {
     text-align: center;
+  }
+  &__date1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  &__date2 {
+    font-size: 20px;
   }
 }

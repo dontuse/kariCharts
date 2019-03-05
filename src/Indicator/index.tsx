@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { block } from 'bem-cn';
 import './i.scss';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import IndicatorIcon from '../IndicatorIcon';
 
 const b = block('Indicator');
 
@@ -19,7 +20,9 @@ export default class Indicator extends Component<IProps> {
           <div className={b('head-box')}>
             <div className={b('changes')}>-55%</div>
             <div className={b('title')}>{this.props.title}</div>
-            <div className={b('icon')} />
+            <div className={b('icon')}>
+              <IndicatorIcon mix={'is-widget'}></IndicatorIcon>
+            </div>
           </div>
         </section>
         <section className={b('indicators-box')}>

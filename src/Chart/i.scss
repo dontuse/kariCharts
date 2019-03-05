@@ -1,0 +1,14 @@
+@import '../libs/colors.scss'; 
+
+.Chart {
+  &__day {
+    font-size: 11px;
+    color: black;
+    padding: 5px 10px;
+    &.is-holy {
+      color: white;
+      background-color: $badColor;
+     
+    }
+  }
+}

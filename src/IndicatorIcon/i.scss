@@ -11,4 +11,17 @@
   justify-content: center;
   border-radius: 6px;
   margin-right: 5px;
+  &.is-small {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 15px;
+  }
+  &.is-widget {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 1px solid 3056FB;
+  }
 }

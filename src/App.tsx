@@ -3,11 +3,13 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Indicator from './Indicator';
 import MainRating from './MainRating';
 import HeaderPlace from './HeaderPlace';
-import IndicatorIcon from './IndicatorIcon';
+import Wrapper from './Wrapper';
+
 import NavTable from './NavTable';
 import Chart from './Chart';
 import Chart2 from './Chart/index2';
 import Chart3 from './Chart/index3';
+import Chart4 from './Chart/index4';
 import Title from './Title';
 import './App.css';
 
@@ -19,20 +21,7 @@ import './App.css';
 // ]
 
 const Home = () => (
-  <div>
-    <h2>Home</h2>
-  </div>
-);
-
-const About = () => (
-  <div>
-    <h2>About</h2>
-  </div>
-);
-
-const Topic = ({ match }) => (
-  <div style={{ 'max-width': 500, margin: '0 auto' }}>
-    <h3>{match.params.topicId}</h3>
+  <Wrapper>
     <section>
       <HeaderPlace />
     </section>
@@ -42,71 +31,31 @@ const Topic = ({ match }) => (
         <MainRating />
       </Link>
     </section>
-    <div style={{ height: 200, background: 'gray' }} />
+    <div style={{ height: 250 }}>
+      <Chart4 />
+    </div>
     <section className="indicators-box">
       <Indicator title={'Выручка LFL'} mix={'is-good'} />
       <Indicator title={'Рост к периоду в ТО'} />
       <Indicator title={'Рост к периоду в ТО'} mix={'is-bad'} />
       <Indicator title={'Выр/клиента'} />
+      <Indicator title={'Выручка LFL'} mix={'is-good'} />
+      <Indicator title={'Рост к периоду в ТО'} />
+      <Indicator title={'Рост к периоду в ТО'} mix={'is-bad'} />
     </section>
-  </div>
+  </Wrapper>
 );
 
-const Topics = ({ match }) => (
-  <div>
-    <h2>Topics</h2>
-    <ul>
-      <li>
-        <Link to={`${match.url}/rendering`}>Rendering with React</Link>
-      </li>
-      <li>
-        <Link to={`${match.url}/components`}>Components</Link>
-      </li>
-      <li>
-        <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
-      </li>
-    </ul>
-
-    <Route path={`${match.path}/:topicId`} component={Topic} />
-    <Route exact path={match.path} render={() => <h3>Please select a topic.</h3>} />
-  </div>
-);
 const NavigationScreen = ({ match }) => (
-  <div style={{ 'max-width': 500, margin: '0 auto' }}>
-    <section>
-      <HeaderPlace />
-      {/* <section style={{ display: 'flex' }}>
-        <div>
-          <table>
-            {[...new Array(50)].map((x, index) => (
-              <tr>
-                <td style={{ backgroundColor: '#AA0900', padding: '5px 10px' }}>22323</td>
-              </tr>
-            ))}
-          </table>
-        </div>
-        <div style={{ flex: 1, overflow: 'auto' }}>
-          <table>
-            <tr>{[...new Array(50)].map((x, index) => <td>{<IndicatorIcon />}</td>)}</tr>
-            {[...new Array(50)].map((x, index) => (
-              <tr>
-                {[...new Array(50)].map((x, index) => (
-                  <td style={{ backgroundColor: '#FA8912', padding: '5px 10px' }}>{index}</td>
-                ))}
-              </tr>
-            ))}
-          </table>
-        </div>
-      </section> */}
-      <NavTable />
-    </section>
-  </div>
+  <Wrapper>
+    <HeaderPlace />
+    <NavTable />
+  </Wrapper>
 );
 
 const DetailsScreen = ({ match }) => (
-  <div style={{ 'max-width': 500, margin: '0 auto' }}>
+  <Wrapper>
     <section>
-      
       <HeaderPlace />
       <Title mix={'is-title'}>Трафик</Title>
       <div style={{ height: 250, marginBottom: 30 }}>
@@ -122,19 +71,17 @@ const DetailsScreen = ({ match }) => (
       <div>
         <Title>Статистика за месяц</Title>
         <div style={{ height: 250 }}>
-        <Chart3 />
-      </div>
+          <Chart3 />
+        </div>
       </div>
     </section>
-  </div>
+  </Wrapper>
 );
 
 const BasicExample = () => (
   <Router>
     <div>
       <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/topics" component={Topics} />
       <Route path="/navigation-screen" component={NavigationScreen} />
       <Route path="/details" component={DetailsScreen} />
     </div>

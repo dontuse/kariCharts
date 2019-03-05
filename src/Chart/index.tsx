@@ -28,7 +28,6 @@ const data = [
 ];
 
 export default class Example extends PureComponent {
-  static jsfiddleUrl = 'https://jsfiddle.net/alidingling/7j5bbbum/';
 
   render() {
     return (
@@ -38,6 +37,7 @@ export default class Example extends PureComponent {
           >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />
+            <YAxis hide />
             
             <Tooltip />
             <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />

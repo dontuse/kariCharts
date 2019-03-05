@@ -4,7 +4,7 @@ import { block } from 'bem-cn';
 
 const b = block('IndicatorIcon');
 
-export default class MainRating extends Component {
+export default class MainRating extends Component<any> {
   
   render() {
     const arr = [
@@ -17,7 +17,7 @@ export default class MainRating extends Component {
     ]
 
     return (
-      <div className={b()}>
+      <div className={b.mix(this.props.mix)}>
         {arr[Math.floor(Math.random()*arr.length)]}
       </div>
     )
