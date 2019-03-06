@@ -7,7 +7,7 @@ import { relative } from 'path';
 
 const data = [
   {
-    name: 'Текущий месяц', 'факт': 1220, "не выполнено": 3280, план: 1233,
+    name: 'Текущий месяц', 'факт': 1220, "не выполнено":5280, план: 1233,
   },
   {
     name: 'Предыдущий месяц', 'факт': 4233, план: 3242, "не выполнено": null, r: 2111
@@ -23,7 +23,7 @@ const renderCustomizedLabel = props => {
   }
   return (
     <foreignObject style={{zIndex: 1121, position: 'relative'}} x={x + width - 3} y={y - 15} width={100} height={50}  fill="red" >
-      <div style={{borderLeft: '3px solid red', height: '100%', zIndex: 12221, position: 'relative'}}>
+      <div style={{borderLeft: '3px solid #FB362F', height: '100%', zIndex: 12221, position: 'relative'}}>
       <span style={{top: 0, left: 5, position: 'absolute', fontSize: 11}}>{value}</span>
       <span style={{bottom: 0, left: 5, position: 'absolute', fontSize: 11}}>50 %</span>
       </div>
@@ -40,12 +40,12 @@ export default class Chart3 extends PureComponent {
         layout='vertical'
         data={data}
         margin={{
-          top: 20, right: 50, bottom: 20, left: 50,
+          top: 20, right: 0, bottom: 20, left: 20,
         }}
       >
         <CartesianGrid stroke="#f5f5f5" />
-        <XAxis type="number" />
-        <YAxis orientation='left'  dataKey="name" type="category" />
+        <XAxis hide type="number" />
+        <YAxis tick={{fontSize: 11, fill: '#3056FB'}} orientation='left'  dataKey="name" type="category" />
         <Tooltip />
         <Legend />
         {/* <Area dataKey="amt" fill="#8884d8" stroke="#8884d8" /> */}
