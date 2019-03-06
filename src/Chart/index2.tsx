@@ -32,6 +32,8 @@ const data = [
   },
 ];
 
+const plan = 6590;
+
 
 const customizedTick = (props) => {
   console.log('props', props)
