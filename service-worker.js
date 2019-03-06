@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/kariCharts/precache-manifest.cb98bf912b300ff1fbb9fd14a2050eb9.js"
+  "/kariCharts/precache-manifest.2eeb3566a2ef6a36cb0c433b6edfbeec.js"
 );
 
 workbox.clientsClaim();
