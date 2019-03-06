@@ -6,22 +6,21 @@ import {
 
 const data = [
   {
-    name: 'Текущий месяц', 'План': 150, "Факт": 50,
+    name: 'Текущий месяц', 'факт': 1220, "не выполнено": 3280,
   },
   {
-    name: 'Прошлый месяц', "Факт": 155
+    name: 'Предыдущий месяц', 'факт': 4233,
   },
+
 ];
 
-export default class Example extends PureComponent {
-  static jsfiddleUrl = 'https://jsfiddle.net/alidingling/shjsn5su/';
+export default class Chart3 extends PureComponent {
 
   render() {
     return (
       <ResponsiveContainer>
       <ComposedChart
         layout="vertical"
-       
         data={data}
         margin={{
           top: 20, right: 20, bottom: 20, left: 20,
@@ -33,16 +32,12 @@ export default class Example extends PureComponent {
         <Tooltip />
         <Legend />
         {/* <Area dataKey="amt" fill="#8884d8" stroke="#8884d8" /> */}
-        <Bar dataKey="Факт" barSize={40} fill="#413ea0" stackId="a" >
-          {/* {
-          	data.map((entry, index) => <Cell fill={red}/>)
-          } */}
+        <Bar layout="vertical" dataKey="факт" barSize={40} fill="#413ea0" stackId="a">
+          {/* {console.log('data--------', data)}     */}
         </Bar>
-        <Bar dataKey="План" barSize={40} fill="red" stackId="a" >
-          {/* {
-          	data.map((entry, index) => <Cell fill={red}/>)
-          } */}
+        <Bar dataKey="не выполнено" stackId="a" barSize={40} fill="gray"  >
         </Bar>
+
 
         
       </ComposedChart>

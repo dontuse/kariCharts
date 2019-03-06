@@ -1,29 +1,29 @@
 import React, { PureComponent } from 'react';
 import {
-  AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Line, ComposedChart,
+  AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Line, ComposedChart, Legend,
 } from 'recharts';
 
 const data = [
   {
-    name: '10', uv: 4000, pv: 2400, amt: 2400,  q: 3333, r : 1222,
+    name: '10', 'факт': 2000, прогноз: 2425, план: 2400,  
   },
   {
-    name: '12', uv: 4000, pv: 2400, amt: 2400,  q: 333, r : 6222,
+    name: '12', 'факт': 1300, прогноз: 2400, план: 2400, 
   },
   {
-    name: '14', uv: 3000, pv: 1398, amt: 2210,  q: 4333, r : 2222,
+    name: '14', факт: 3000, прогноз: 1398, план: 3210,
   },
   {
-    name: '16', uv: 2000, pv: 9800, amt: 2290,  q: 1333, r : 2222,
+    name: '16', факт: 2000, прогноз: 2200, план: 2290,
   },
   {
-    name: '18', uv: 2780, pv: 3908, amt: 2000,  q: 2333, r : 2222,
+    name: '18', факт: 2780, прогноз: 3908, план: 2000,
   },
   {
-    name: '20', uv: 1890, pv: 4800, amt: 2181, q: 1333, r : 2222,
+    name: '20', факт: 1890, прогноз: 3800, план: 2181,
   },
   {
-    name: '22', uv: 2390, pv: 3800, amt: 2500, q: 4333, r : 2222,
+    name: '22', факт: 2390, прогноз: 3800, план: 2500,
   },
 ];
 
@@ -35,15 +35,16 @@ export default class Example extends PureComponent {
           <ComposedChart
             data={data}
           >
-            <CartesianGrid strokeDasharray="3 3" />
+            <CartesianGrid strokeDasharray="1 1 " />
             <XAxis dataKey="name" />
             <YAxis hide />
             
             <Tooltip />
-            <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
+            <Area dot={{  strokeWidth: 2 }} type="linear" dataKey="факт" stroke="#3056FB" fill="#2BF8FE" />
 
-            <Line type="monotone" dataKey="q" stroke="red" />
-            <Line type="monotone" dataKey="r" stroke="black" strokeDasharray="5 5" />
+            <Line type="linear" dataKey="план" stroke="#AA0D0F" />
+            <Line type="linear" dataKey="прогноз" stroke="black" strokeDasharray="2 2" />
+            <Legend></Legend>
           </ComposedChart>
         </ResponsiveContainer>
     );

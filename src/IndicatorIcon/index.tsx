@@ -17,7 +17,7 @@ export default class MainRating extends Component<any> {
     ]
 
     return (
-      <div className={b.mix(this.props.mix)}>
+      <div title="Показатель подсказка" className={b.mix(this.props.mix)}>
         {arr[Math.floor(Math.random()*arr.length)]}
       </div>
     )
