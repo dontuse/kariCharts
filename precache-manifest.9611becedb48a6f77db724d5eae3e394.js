@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "5dd3976cb5d61e2e561f2a46b916f377",
-    "url": "/kariCharts/static/media/fa-regular-400.5dd3976c.woff"
+    "revision": "414ff5daad323a1c47c5177d4bd29674",
+    "url": "/kariCharts/static/media/fa-regular-400.414ff5da.eot"
   },
   {
-    "revision": "a6fa5981de3b84644648",
-    "url": "/kariCharts/static/css/main.524aaf5b.chunk.css"
+    "revision": "4ab5be15688349fa6fd3",
+    "url": "/kariCharts/static/css/main.35dcee0f.chunk.css"
   },
   {
     "revision": "4fa00a08f75c400a5f55",
@@ -16,36 +16,36 @@ self.__precacheManifest = [
     "url": "/kariCharts/static/media/fa-solid-900.82905d8d.svg"
   },
   {
-    "revision": "98f85f4b39b529d99254",
-    "url": "/kariCharts/static/js/2.98f85f4b.chunk.js"
-  },
-  {
-    "revision": "b90365bccdabd68c6c03902b4b141f09",
-    "url": "/kariCharts/static/media/fa-brands-400.b90365bc.woff"
+    "revision": "4514c9c9c48949541662",
+    "url": "/kariCharts/static/js/2.4514c9c9.chunk.js"
   },
   {
     "revision": "d9d17590c975aad1be0ddab673f9c769",
     "url": "/kariCharts/static/media/fa-brands-400.d9d17590.eot"
   },
   {
-    "revision": "c39278f7abfc798a241551194f55e29f",
-    "url": "/kariCharts/static/media/fa-brands-400.c39278f7.ttf"
+    "revision": "b90365bccdabd68c6c03902b4b141f09",
+    "url": "/kariCharts/static/media/fa-brands-400.b90365bc.woff"
   },
   {
     "revision": "4b115e1153a9ea339d6a0bb284cc8ed3",
     "url": "/kariCharts/static/media/fa-brands-400.4b115e11.woff2"
   },
   {
+    "revision": "c39278f7abfc798a241551194f55e29f",
+    "url": "/kariCharts/static/media/fa-brands-400.c39278f7.ttf"
+  },
+  {
     "revision": "65779ebcc35604a25c2ba77309c5b8af",
     "url": "/kariCharts/static/media/fa-regular-400.65779ebc.woff2"
   },
   {
-    "revision": "a6fa5981de3b84644648",
-    "url": "/kariCharts/static/js/main.a6fa5981.chunk.js"
+    "revision": "4ab5be15688349fa6fd3",
+    "url": "/kariCharts/static/js/main.4ab5be15.chunk.js"
   },
   {
-    "revision": "414ff5daad323a1c47c5177d4bd29674",
-    "url": "/kariCharts/static/media/fa-regular-400.414ff5da.eot"
+    "revision": "5dd3976cb5d61e2e561f2a46b916f377",
+    "url": "/kariCharts/static/media/fa-regular-400.5dd3976c.woff"
   },
   {
     "revision": "80533988ff5fecd5be26557d08ce8237",
@@ -56,12 +56,12 @@ self.__precacheManifest = [
     "url": "/kariCharts/static/media/fa-regular-400.f6c6f6c8.ttf"
   },
   {
-    "revision": "b5596f4d339f99e3d69bc41be78db962",
-    "url": "/kariCharts/static/media/fa-solid-900.b5596f4d.eot"
-  },
-  {
     "revision": "e7e957c87c454bccaa3bf9fdaa6874f8",
     "url": "/kariCharts/static/media/fa-regular-400.e7e957c8.svg"
+  },
+  {
+    "revision": "b5596f4d339f99e3d69bc41be78db962",
+    "url": "/kariCharts/static/media/fa-solid-900.b5596f4d.eot"
   },
   {
     "revision": "462806316fea535a6a57651bc2b000b0",
@@ -76,11 +76,11 @@ self.__precacheManifest = [
     "url": "/kariCharts/static/media/fa-solid-900.b70cea03.ttf"
   },
   {
-    "revision": "98f85f4b39b529d99254",
+    "revision": "4514c9c9c48949541662",
     "url": "/kariCharts/static/css/2.1a9aec91.chunk.css"
   },
   {
-    "revision": "2c472093f38f45ec71d26e69ad4e686d",
+    "revision": "ff7b88baf9f707d4679ce5dfbc9d65bc",
     "url": "/kariCharts/index.html"
   }
 ];

@@ -1,16 +1,16 @@
 {
-  "main.css": "/kariCharts/static/css/main.524aaf5b.chunk.css",
-  "main.js": "/kariCharts/static/js/main.a6fa5981.chunk.js",
-  "main.js.map": "/kariCharts/static/js/main.a6fa5981.chunk.js.map",
+  "main.css": "/kariCharts/static/css/main.35dcee0f.chunk.css",
+  "main.js": "/kariCharts/static/js/main.4ab5be15.chunk.js",
+  "main.js.map": "/kariCharts/static/js/main.4ab5be15.chunk.js.map",
   "runtime~main.js": "/kariCharts/static/js/runtime~main.4fa00a08.js",
   "runtime~main.js.map": "/kariCharts/static/js/runtime~main.4fa00a08.js.map",
   "static/css/2.1a9aec91.chunk.css": "/kariCharts/static/css/2.1a9aec91.chunk.css",
-  "static/js/2.98f85f4b.chunk.js": "/kariCharts/static/js/2.98f85f4b.chunk.js",
-  "static/js/2.98f85f4b.chunk.js.map": "/kariCharts/static/js/2.98f85f4b.chunk.js.map",
+  "static/js/2.4514c9c9.chunk.js": "/kariCharts/static/js/2.4514c9c9.chunk.js",
+  "static/js/2.4514c9c9.chunk.js.map": "/kariCharts/static/js/2.4514c9c9.chunk.js.map",
   "index.html": "/kariCharts/index.html",
-  "precache-manifest.e32c586d5c0319ab56b571cf4e69006c.js": "/kariCharts/precache-manifest.e32c586d5c0319ab56b571cf4e69006c.js",
+  "precache-manifest.9611becedb48a6f77db724d5eae3e394.js": "/kariCharts/precache-manifest.9611becedb48a6f77db724d5eae3e394.js",
   "service-worker.js": "/kariCharts/service-worker.js",
   "static/css/2.1a9aec91.chunk.css.map": "/kariCharts/static/css/2.1a9aec91.chunk.css.map",
-  "static/css/main.524aaf5b.chunk.css.map": "/kariCharts/static/css/main.524aaf5b.chunk.css.map",
+  "static/css/main.35dcee0f.chunk.css.map": "/kariCharts/static/css/main.35dcee0f.chunk.css.map",
   "static/media/all.css": "/kariCharts/static/media/fa-solid-900.b70cea03.ttf"
 }
