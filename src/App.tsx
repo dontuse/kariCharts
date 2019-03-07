@@ -12,6 +12,7 @@ import Chart3 from './Chart/index3';
 import Chart4 from './Chart/index4';
 import Title from './Title';
 import './App.css';
+import LoginScreen from './LoginScreen';
 
 // const rows = [
 //   {
@@ -86,6 +87,7 @@ const BasicExample = () => (
       <Route exact path="/" component={Home} />
       <Route path="/navigation-screen" component={NavigationScreen} />
       <Route path="/details" component={DetailsScreen} />
+      <Route path="/login" component={LoginScreen} />
     </div>
   </Router>
 );
