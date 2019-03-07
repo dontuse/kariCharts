@@ -78,8 +78,10 @@ const DetailsScreen = ({ match }) => (
   </Wrapper>
 );
 
+const baseName = "/kariCharts";
+
 const BasicExample = () => (
-  <Router>
+  <Router basename={baseName}>
     <div>
       <Route exact path="/" component={Home} />
       <Route path="/navigation-screen" component={NavigationScreen} />
